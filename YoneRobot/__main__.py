@@ -82,7 +82,8 @@ buttons = [
     [
         InlineKeyboardButton(
             text="➕️ ADD YONE TO YOUR GROUP ➕️", url="t.me/Yone_Robot?startgroup=true"),
-    ],import importlib
+    ],
+import importlib
 import time
 import re
 from sys import argv
