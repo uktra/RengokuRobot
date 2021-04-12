@@ -426,18 +426,18 @@ airing_query = '''
     }
     '''
 
-fav_query = """
-query ($id: Int) { 
-      Media (id: $id, type: ANIME) { 
-        id
-        title {
-          romaji
-          english
-          native
-        }
-     }
-}
-"""
+#fav_query = """
+#query ($id: Int) { 
+#      Media (id: $id, type: ANIME) { 
+#        id
+#       title {
+#          romaji
+#          english
+#          native
+#       }
+#     }
+#}
+# """
 
 anime_query = '''
    query ($id: Int,$search: String) { 
