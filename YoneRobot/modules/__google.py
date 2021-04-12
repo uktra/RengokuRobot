@@ -287,5 +287,5 @@ __help__ = """
  ❍ /country <country name>*:* Gathering info about given country
  ❍ /imdb <Movie name>*:* Get full info about a movie with imdb.com
  ❍ Tomioka <query>*:* Yone answers the query
-  💡Ex: `what is uwu`
+  💡Ex: `Tomioka what is uwu`
 """
