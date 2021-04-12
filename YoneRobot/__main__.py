@@ -393,8 +393,8 @@ def shorten(description, info='anilist.co'):
 
 #time formatter from uniborg
 def t(milliseconds: int) -> str:
-    """Inputs time in milliseconds, to get beautified time,
-    as string"""
+    "Inputs time in milliseconds, to get beautified time,
+    as string"
     seconds, milliseconds = divmod(int(milliseconds), 1000)
     minutes, seconds = divmod(seconds, 60)
     hours, minutes = divmod(minutes, 60)
