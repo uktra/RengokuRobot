@@ -1,3 +1,19 @@
+    LOGGER,
+    OWNER_ID,
+    PORT,
+    SUPPORT_CHAT,
+    TOKEN,
+    URL,
+    WEBHOOK,
+    SUPPORT_CHAT,
+    dispatcher,
+    StartTime,
+    telethn,
+    pbot,
+    updater,
+)
+
+# needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from YoneRobot.modules import ALL_MODULES
 from YoneRobot.modules.helper_funcs.chat_status import is_user_admin
@@ -48,14 +64,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow` [🤗](https://telegra.ph/file/7e61fe06a9c02747249c4.jpg) `My name is` *Tomioka*
+`Hellow` [🤗](https://telegra.ph/file/7e61fe06a9c02747249c4.jpg) `My name is` *yone*
 `I'm here to help you manage your groups! Hit` *📚Commands*   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD Tomioka TO YOUR GROUP ➕️", url="t.me/AnimeDynastyRobot?startgroup=true"),
+            text="➕️ ADD YONE TO YOUR GROUP ➕️", url="t.me/Yone_Robot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="yone_"),
@@ -63,16 +79,16 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🤴 OWNER", url="https://t.me/Nk_guy"),
+            text="🤴 OWNER", url="https://t.me/A_viyu"),
         InlineKeyboardButton(
-            text="👥 Group", url="https://t.me/anime_dynasty"
+            text="👥 SUPPORT", url="https://t.me/Kora_Support"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hi.. I'm` [Tomioka🙋‍♀️](https://telegra.ph/file/7e61fe06a9c02747249c4.jpg)
+`Hi.. I'm` [yone🙋‍♀️](https://telegra.ph/file/7e61fe06a9c02747249c4.jpg)
 `Click on the buttons below to get documentation about specific modules..`"""
 
 
@@ -326,16 +342,16 @@ def yone_about_callback(update, context):
     query = update.callback_query
     if query.data == "yone_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Tomioka*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *yone*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Tomioka's licensed under the GNU General Public License v3.0_
+                 \n\n_yone's licensed under the GNU General Public License v3.0_
                  \nHere is the [💾Repository](https://github.com/noob-kittu/YoneRobot).
-                 \n\nIf you have any question about Tomioka, let us know at .""",
+                 \n\nIf you have any question about yone, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -361,7 +377,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Tomioka*
+            text=""" Hi..🤗 I'm *yone*
                  \nHere is the [Source Code](https://github.com/Noob-kittu/YoneRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
