@@ -1,4 +1,4 @@
-from YoneRobot.event import register	
+from YoneRobot.events import register	
 from YoneRobot import telethn as tbot	
 TMP_DOWNLOAD_DIRECTORY = "./"	
 from telethon import events	
