@@ -74,35 +74,35 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hello` [🙋‍♀️](https://telegra.ph/file/6aeea92828ecde808819c.jpg) `My name is` *Tomioka*
+`Hello` [🙋‍♀️](https://telegra.ph/file/6aeea92828ecde808819c.jpg) `My name is` *Rengoku*
 `I'm here to help you manage your groups! Hit` *📚Commands*   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD Tomioka TO YOUR GROUP ➕️", url="t.me/AnimedynasttRobot?startgroup=true"),
+            text="➕️ Summon Rengoku TO YOUR GROUP ➕️", url="t.me/Rengokurobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="yone_"),
-        InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
+        InlineKeyboardButton(text=" 🔰ABOUT", callback_data="yone_"),
+        InlineKeyboardButton(text=" 🌀COMMANDS", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
             text="🤴 OWNER", url="https://t.me/nk_guy"),
         InlineKeyboardButton(
-            text="Group", url="https://t.me/anime_dynasty"
+            text="Support", url="https://t.me/Rengokusupport"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hi.. I'm` [🙋‍♀️](https://telegra.ph/file/6aeea92828ecde808819c.jpg)
+`Hi.. I'm` [🙋‍♀️](https://telegra.ph/file/8a7e1a28dd6fac2d72c95.jpg)
 `Click on the buttons below to get documentation about specific modules..`"""
 
 
-yone_IMG = "https://telegra.ph/file/6aeea92828ecde808819c.jpg"
+yone_IMG = "https://telegra.ph/file/8a7e1a28dd6fac2d72c95.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](#) or by contacting @kittu5588 \
@@ -352,15 +352,15 @@ def yone_about_callback(update, context):
     query = update.callback_query
     if query.data == "yone_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Tomioka*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Rengoku*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Tomioka's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/nksama/tomioka).
+                 \n\n_Rengoku is licensed under the GNU General Public License v3.0_
+                 \nHere is the [💾Repository](https://github.com/nksama/RengokuRobot).
                  \n\nIf you have any question about Tomioka, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -387,8 +387,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Tomioka*
-                 \nHere is the [Source Code](https://github.com/Noob-kittu/YoneRobot) .""",
+            text=""" Hi..🤗 I'm *Rengoku*
+                 \nHere is the [Source Code](https://github.com/nksama/rengokurobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -683,7 +683,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "water breathing final form. alive")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Fire breathing First form! i am awake)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
