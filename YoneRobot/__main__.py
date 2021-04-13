@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hello` [🙋‍♀️](https://telegra.ph/file/6aeea92828ecde808819c.jpg) `My name is` *Rengoku*
+`Hello` [🙋‍♀️](https://telegra.ph/file/f1bf53a50ad9fc4039342.jpg) `My name is` *Rengoku*
 `I'm here to help you manage your groups! Hit` *📚Commands*   
 """
 
@@ -98,16 +98,13 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'm` [🙋‍♀️](https://telegra.ph/file/8a7e1a28dd6fac2d72c95.jpg)
+`Hi.. I'm` [🙋‍♀️](https://telegra.ph/file/f1bf53a50ad9fc4039342.jpg)
 `Click on the buttons below to get documentation about specific modules..`"""
 
 
-yone_IMG = "https://telegra.ph/file/8a7e1a28dd6fac2d72c95.jpg"
+yone_IMG = "https://telegra.ph/file/f1bf53a50ad9fc4039342.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](#) or by contacting @kittu5588 \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """ No need of donation please share the bot"""
 
 IMPORTED = {}
 MIGRATEABLE = []
