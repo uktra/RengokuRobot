@@ -74,37 +74,39 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hello` [🙋‍♀️](https://telegra.ph/file/f1bf53a50ad9fc4039342.jpg) `My name is` *Rengoku*
-`I'm here to help you manage your groups! Hit` *📚Commands*   
+`Hello` [😁](https://telegra.ph/file/448c27e005abb2465a329.jpg) `My name is` *Gojo*
+`I'm here to help you manage your groups with my Jutsu! Hit` *📚Commands*   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Summon Rengoku TO YOUR GROUP ➕️", url="t.me/Rengokurobot?startgroup=true"),
+            text="Add Me To Your Group", url="t.me/Rengokurobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text=" 🔰ABOUT", callback_data="yone_"),
-        InlineKeyboardButton(text=" 🌀COMMANDS", callback_data="help_back"),
+        InlineKeyboardButton(text="ABOUT", callback_data="yone_"),
+        InlineKeyboardButton(text="COMMANDS", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="⚜️ OWNER", url="https://t.me/nk_guy"),
+            text="Watch Anime 😍", url="https://t.me/nk_guy"),
         InlineKeyboardButton(
-            text="Support", url="https://t.me/Rengokusupport"
+            text="Anime Chat 😁", url="https://t.me/Rengokusupport"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hi.. I'm` [🙋‍♀️](https://telegra.ph/file/f1bf53a50ad9fc4039342.jpg)
-`Click on the buttons below to get documentation about specific modules..`"""
+`Hi.. I'm` [Gojo Satoru!](https://telegra.ph/file/22aa947225d5a76806f34.jpg) Yeah, Ik am your favorite 😎.
+`Click on the buttons below to get documentation about specific modules..`
+Or ask your query in @Gojo_Support.""" 
 
 
-yone_IMG = "https://telegra.ph/file/f1bf53a50ad9fc4039342.jpg"
 
-DONATE_STRING = """ No need of donation please share the bot"""
+yone_IMG = "https://telegra.ph/file/448c27e005abb2465a329.jpg"
+
+DONATE_STRING = """ NO DON'T!! JUST JOIN @ANIME_WARS AND SHARE ME."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -214,7 +216,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "I'm awake already bruh!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -349,16 +351,16 @@ def yone_about_callback(update, context):
     query = update.callback_query
     if query.data == "yone_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Rengoku*, a powerful group management bot built to help you manage your group easily.
-                 \n❍ I can restrict users.
+            text="""I'm *Gojo Satoru*, a powerful group management bot built to help you manage your group easily.
+                 \n❍ I can ban and kick people with my Jutsu.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Rengoku is licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/nksama/RengokuRobot).
-                 \n\nIf you have any question about Tomioka, let us know at .""",
+                 \n\nYou can also show us support by joinin' @Anime_Chat_English & @Anime_Wars.
+                 \nIf you have any question about me, let us know at @Gojo_Support.
+                 \n More About Me: https://telegra.ph/Gojou-Satoru-04-13""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -384,8 +386,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Rengoku*
-                 \nHere is the [Source Code](https://github.com/nksama/rengokurobot) .""",
+            text=""" Hi..🤗 I'm *Gojo*
+                 \nLol repo private.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
