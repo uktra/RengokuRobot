@@ -17,7 +17,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async, Filters
 
 GIF_ID = 'CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE'
-CHEEMS_BONKLOL = 'https://telegra.ph/file/eda1e726d24a66d863416.jpg'
+CHEEMS_BONKLOL = 'https://telegra.ph/file/1b45821e611db88e3d8c0.mp4'
 
 
 @run_async
