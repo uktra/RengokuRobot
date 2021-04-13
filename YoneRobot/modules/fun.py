@@ -353,6 +353,7 @@ __help__ = """
  ❍ /8ball*:* predicts using 8ball method 
 """
 
+MEME_HANDLER = DisableAbleCommandHandler("meme", meme)
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap)
@@ -382,6 +383,7 @@ dispatcher.add_handler(RLG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
+dispatcher.add_handler(MEME_HANDLER)
 
 __mod_name__ = "Memes"
 __command_list__ = [
@@ -415,4 +417,5 @@ __handlers__ = [
     SHOUT_HANDLER,
     WEEBIFY_HANDLER,
     EIGHTBALL_HANDLER,
+    MEME_HANDLER
 ]
