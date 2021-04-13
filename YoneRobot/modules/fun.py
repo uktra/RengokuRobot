@@ -1,6 +1,7 @@
 import html
 import random
 import time
+import requests
 
 import YoneRobot.modules.fun_strings as fun_strings
 from YoneRobot import dispatcher
@@ -351,6 +352,7 @@ __help__ = """
  ❍ /sanitize*:* always use this before /pat or any contact
  ❍ /pat*:* pats a user, or get patted
  ❍ /8ball*:* predicts using 8ball method 
+ ❍ /meme - anime memes from r/animememes
 """
 
 MEME_HANDLER = DisableAbleCommandHandler("meme", meme)
