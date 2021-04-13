@@ -89,7 +89,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🤴 OWNER", url="https://t.me/nk_guy"),
+            text="⚜️ OWNER", url="https://t.me/nk_guy"),
         InlineKeyboardButton(
             text="Support", url="https://t.me/Rengokusupport"
         ),
